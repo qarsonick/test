@@ -1,68 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Освітній ресурс</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/f77600b8df.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="header_left">
-            <h1>Ім'я Прізвище</h1>
-            <div class="bio">
-                <p>Тут напиши що-небудь про себе :)</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-        </div>
-        <div class="header_right">
-            <div class="header_btn">
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="skills">
-            <h1>Навички</h1>
-            <div class="section_row">
-                <div class="section_item">
-                    <img src="html_logo.png" alt="">
-                </div>
-                <div class="section_item">
-                    <img src="css_logo.png" alt="">
-                </div>
-                <div class="section_item">
-                    <img src="js_logo.png" alt="">
-                </div>
-            </div>
-        </section>
-        <section class="projects">
-            <h1>Проєкти</h1>
-            <div class="section_row">
-                <div class="section_item github">
-                    <img src="github_logo.png" alt="">
-                </div>
-            </div>
-        </section>
-        <section class="contacts">
-            <h1>Контакти</h1>
-            <div class="section_row">
-                <div class="section_item">
-                    <img src="Instagram_icon.png.webp" alt="">
-                </div>
-                <div class="section_item">
-                    <img src="tg_logo.svg" alt="">
-                </div>
-                <div class="section_item">
-                    <img src="email_logo.png" alt="">
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer_content">
-            Створено мною в 2024 | Logika
-        </div>
-    </footer>
+
+<header>
+    <h1>Цифровий освітній ресурс</h1>
+</header>
+
+<nav>
+    <a href="index.html">Головна</a>
+    <a href="safety.html">Безпека</a>
+    <a href="firstaid.html">Перша допомога</a>
+    <a href="emergencies.html">Надзвичайні ситуації</a>
+    <a href="tests.html">Тести</a>
+</nav>
+
+<div class="container">
+
+    <div class="block">
+        <h2>Вітаємо!</h2>
+        <p>Це повністю автономний навчальний ресурс з основ безпеки, домедичної допомоги та дій у надзвичайних ситуаціях.</p>
+
+        <!-- SVG картинка -->
+        <svg viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#cce5ff"/>
+            <path d="M40 55 L50 30 L60 55 Z" fill="#004a99"/>
+            <rect x="45" y="55" width="10" height="20" fill="#004a99"/>
+        </svg>
+    </div>
+
+    <div class="block">
+        <h3>Вступне навчальне відео</h3>
+        <iframe width="100%" height="320"
+            src="https://www.youtube.com/embed/bPZfK1tKo70"
+            title="Основи безпеки"
+            allowfullscreen></iframe>
+    </div>
+
+</div>
+
 </body>
 </html>
