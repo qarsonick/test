@@ -18,24 +18,121 @@
     <a href="tests.html">Тести</a>
 </nav>
 
+<!DOCTYPE html>
+
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тести з безпеки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Перевір свої знання</h1>
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="safety.html">Безпека</a>
+        <a href="firstaid.html">Перша допомога</a>
+        <a href="emergencies.html">Надзвичайні ситуації</a>
+        <a href="tests.html" class="active">Тести</a>
+    </nav>
+</header>
+
 <div class="container">
 
-    <div class="quiz-question" data-correct="1">
-        <h3>1. Що робити спочатку?</h3>
-        <div class="quiz-option">Почати компресії</div>
-        <div class="quiz-option">Перевірити безпеку місця</div>
-        <div class="quiz-option">Дати води</div>
-    </div>
 
-    <div class="quiz-question" data-correct="0">
-        <h3>2. При опіку потрібно:</h3>
-        <div class="quiz-option">Охолодити водою</div>
-        <div class="quiz-option">Проколоти пухирі</div>
-        <div class="quiz-option">Накрити ковдрою</div>
-    </div>
+<div class="quiz-question" data-correct="1">
+    <h3>1. Що потрібно робити перш за все при нещасному випадку?</h3>
+    <div class="quiz-option">Почати надавати першу допомогу</div>
+    <div class="quiz-option">Перевірити безпеку місця</div>
+    <div class="quiz-option">Викликати друзів</div>
+</div>
+
+<div class="quiz-question" data-correct="0">
+    <h3>2. Як правильно діяти при опіку?</h3>
+    <div class="quiz-option">Охолодити водою</div>
+    <div class="quiz-option">Проколоти пухирі</div>
+    <div class="quiz-option">Закрити ковдрою</div>
+</div>
+
+<div class="quiz-question" data-correct="2">
+    <h3>3. Що робити при кровотечі?</h3>
+    <div class="quiz-option">Відразу накласти пов’язку</div>
+    <div class="quiz-option">Обробити спиртом</div>
+    <div class="quiz-option">Зробити тиск на рану і підняти кінцівку</div>
+</div>
+
+<div class="quiz-question" data-correct="0">
+    <h3>4. Який номер телефону виклику швидкої допомоги?</h3>
+    <div class="quiz-option">103</div>
+    <div class="quiz-option">101</div>
+    <div class="quiz-option">112</div>
+</div>
+
+<div class="quiz-question" data-correct="1">
+    <h3>5. Що робити при задусі?</h3>
+    <div class="quiz-option">Ігнорувати</div>
+    <div class="quiz-option">Виконати удари між лопатками або прийом Геймліха</div>
+    <div class="quiz-option">Дати воду</div>
+</div>
+
+<div class="quiz-question" data-correct="0">
+    <h3>6. Пожежа в будинку: куди рухатись?</h3>
+    <div class="quiz-option">До виходу/сходів, не користуючись ліфтом</div>
+    <div class="quiz-option">До ліфта</div>
+    <div class="quiz-option">Залишитися в кімнаті</div>
+</div>
+
+<div class="quiz-question" data-correct="2">
+    <h3>7. При переломі кінцівки:</h3>
+    <div class="quiz-option">Спробувати її випрямити</div>
+    <div class="quiz-option">Накласти гарячий компрес</div>
+    <div class="quiz-option">Зафіксувати кінцівку і не рухати</div>
+</div>
+
+<div class="quiz-question" data-correct="1">
+    <h3>8. Що робити під час повені?</h3>
+    <div class="quiz-option">Виходити у воду</div>
+    <div class="quiz-option">Підійматися на вищі поверхи</div>
+    <div class="quiz-option">Ігнорувати попередження</div>
+</div>
+
+<div class="quiz-question" data-correct="0">
+    <h3>9. Що потрібно зробити перед наданням допомоги?</h3>
+    <div class="quiz-option">Переконатися у безпеці себе та потерпілого</div>
+    <div class="quiz-option">Відразу почати діяти</div>
+    <div class="quiz-option">Зателефонувати другу</div>
+</div>
+
+<div class="quiz-question" data-correct="2">
+    <h3>10. Що робити при хімічному контакті?</h3>
+    <div class="quiz-option">Ігнорувати</div>
+    <div class="quiz-option">Почистити пилом</div>
+    <div class="quiz-option">Закрити вікна та дихати через тканину</div>
+</div>
+
+<div class="quiz-question" data-correct="1">
+    <h3>11. Як поводитися під час землетрусу?</h3>
+    <div class="quiz-option">Виходити на вулицю одразу</div>
+    <div class="quiz-option">Сховатися під міцним столом або біля внутрішньої стіни</div>
+    <div class="quiz-option">Ставати біля вікна</div>
+</div>
+
+<div class="quiz-question" data-correct="0">
+    <h3>12. Основна мета першої допомоги?</h3>
+    <div class="quiz-option">Зберегти життя і здоров'я постраждалого</div>
+    <div class="quiz-option">Навчити медиків</div>
+    <div class="quiz-option">Провести експерименти</div>
+</div>
+
+<button id="showResult" style="margin-top:20px; padding:10px 20px; border-radius:15px; cursor:pointer; background:#0066cc; color:#fff;">Показати результат</button>
+<div id="result" style="margin-top:15px; font-weight:bold; font-size:18px;"></div>
+```
 
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
