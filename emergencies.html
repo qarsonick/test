@@ -1,44 +1,79 @@
 <!DOCTYPE html>
+
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Надзвичайні ситуації</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        main { max-width: 1000px; margin: auto; padding: 20px; }
+        section { background: #e8f2ff; padding: 20px; margin: 15px 0; border-radius: 15px; border-left: 6px solid #0066cc; box-shadow: 0 0 15px rgba(0,102,204,0.3); animation: fadeIn 0.7s ease; }
+        section h2 { margin-top: 0; }
+        a { color: #004a99; text-decoration: underline; }
+        a:hover { color: #003366; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Надзвичайні ситуації</h1>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="safety.html">Безпека</a>
+            <a href="firstaid.html">Перша допомога</a>
+            <a href="emergencies.html" class="active">Надзвичайні ситуації</a>
+            <a href="tests.html">Тести</a>
+        </nav>
+    </header>
 
-<header><h1>Дії в надзвичайних ситуаціях</h1></header>
+<main>
+    <section>
+        <h2>Що таке надзвичайні ситуації?</h2>
+        <p>
+            Надзвичайні ситуації — це події, що загрожують життю та здоров'ю людей або можуть призвести до руйнувань. 
+            Важливо знати алгоритми дій, щоб зберегти себе та оточуючих. Правильні рішення допомагають мінімізувати ризики та запобігти травмам.
+        </p>
+        <p>
+            Сюди входять природні катастрофи, техногенні аварії, пожежі, вибухи, хімічні загрози та інші події, що потребують швидкої реакції.
+        </p>
+    </section>
 
-<nav>
-    <a href="index.html">Головна</a>
-    <a href="safety.html">Безпека</a>
-    <a href="firstaid.html">Перша допомога</a>
-    <a href="emergencies.html">Надзвичайні ситуації</a>
-    <a href="tests.html">Тести</a>
-</nav>
-
-<div class="container">
-
-    <div class="block">
-        <h3>Пожежа</h3>
-        <svg viewBox="0 0 100 100">
-            <path d="M50 10 C40 30 60 40 50 60 C30 40 20 60 40 80 C60 90 80 70 70 50 C60 40 70 20 50 10Z"
-                  fill="#ff6600"/>
-        </svg>
+    <section>
+        <h2>Основні правила поведінки</h2>
         <ul>
-            <li>Не користуйтесь ліфтом.</li>
-            <li>Рухайтесь до виходу.</li>
+            <li><strong>Зберігайте спокій</strong> — паніка може погіршити ситуацію.</li>
+            <li><strong>Оцінюйте обстановку</strong> — визначте найбільшу загрозу зараз.</li>
+            <li><strong>Слухайте офіційні джерела</strong> — виконуйте інструкції служб екстреного реагування.</li>
+            <li><strong>Допомагайте іншим</strong> — тільки якщо це безпечно для вас.</li>
         </ul>
+        <p>
+            В екстрених ситуаціях секунди важливі, тому вміння діяти швидко та правильно є ключовим.
+        </p>
+    </section>
 
-        <h4>Відео: як діяти під час пожежі</h4>
-        <iframe width="100%" height="320"
-            src="https://www.youtube.com/embed/bUWcHcCPEiE"
-            title="Пожежна безпека"
-            allowfullscreen></iframe>
-    </div>
+    <section>
+        <h2>Приклади надзвичайних ситуацій</h2>
+        <p>Найпоширеніші з них:</p>
+        <ul>
+            <li><strong>Пожежі:</strong> залишайте приміщення, користуйтеся сходами, не використовуйте ліфт.</li>
+            <li><strong>Повені:</strong> підіймайтеся на вищі поверхи, не заходьте у воду без потреби.</li>
+            <li><strong>Землетруси:</strong> сховайтеся під міцний стіл або біля внутрішньої стіни, тримайтеся подалі від вікон.</li>
+            <li><strong>Хімічні аварії:</strong> закрийте вікна та двері, використовуйте тканину або маску для захисту дихання.</li>
+        </ul>
+        <p>
+            Головне — завжди забезпечити власну безпеку та допомагати іншим тільки якщо це безпечно.
+        </p>
+    </section>
 
-</div>
+    <section>
+        <h2>Навчальне відео</h2>
+        <p>Перегляньте навчальне відео, щоб дізнатися детальніше, як діяти у різних видах надзвичайних ситуацій:</p>
+        <p>
+            <a href="https://www.youtube.com/watch?v=3FvS9r6N2P8" target="_blank">Переглянути відео про НС</a>
+        </p>
+    </section>
+</main>
 
 </body>
 </html>
