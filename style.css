@@ -1,117 +1,77 @@
+/* Загальні стилі */
 body {
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    color: #333;
 }
 
+/* Шапка */
 header {
-    width: 100%;
-    height: 100vh;
-    background: url(header_bg.webp);
-    background-size: cover;
-    display: flex;
+    background: #0066cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-.header_left {
-    width: 65%;
-    height: 100%;
-    font-size: 3vw;
+/* Меню */
+nav {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    padding: 0 5vw;
-    box-sizing: border-box;
-    text-align: right;
+    flex-wrap: wrap;
+    background: #004a99;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-weight: bold;
+}
+nav a:hover {
+    background: #003366;
 }
 
-.header_left p {
-    font-size: 0.5em;
+/* Контейнер */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    animation: fadeIn 0.7s ease;
 }
 
-.bio {
-    width: 60%;
+/* Блоки */
+.block {
+    background: #e8f2ff;
+    border-left: 4px solid #0066cc;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    animation: fadeIn 0.7s ease;
 }
 
-
-.header_right {
-    width: 35%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10vw;
+/* Адаптивність */
+@media (max-width: 600px) {
+    nav a { padding: 10px; font-size: 14px; }
 }
 
-.header_btn {
+/* Анімація */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Тести */
+.quiz-option {
+    background: #dbe6ff;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 8px 0;
     cursor: pointer;
 }
-
-.header_btn:hover {
-    transform: scale(1.05);
+.quiz-option:hover {
+    background: #c7d8ff;
 }
-
-main {
-    width: 100%;
-    height: auto;
-}
-
-section {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 6vw;
-    box-sizing: border-box;
-    min-height: 50vh;
-}
-
-section h1 {
-    font-size: 4em;
-}
-
-.section_row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.section_item {
-    height: 10vw;
-    margin: 0 4em 4em 4em;
-}
-
-.section_item img {
-    height: 100%;
-}
-
-
-.projects {
-    color: white;
-    background: black;
-}
-
-.github:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
-footer {
-    width: 100%;
-    height: 100px;
-    position: relative;
-    background-image: url(footer_bg.png);
-    background-size: cover;
-    background-position: center;
-}
-
-
-.footer_content {
-    width: 100%;
-    height: 100%;
-    backdrop-filter: brightness(50%);
-    -webkit-backdrop-filter: brightness(50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
+.correct { background: #b5f7b5 !important; }
+.wrong { background: #ffb5b5 !important; }
+svg { width: 100%; max-height: 300px; }
