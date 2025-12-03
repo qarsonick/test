@@ -1,77 +1,118 @@
 /* Загальні стилі */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f2f2f2;
-    color: #333;
+margin: 0;
+font-family: 'Nunito', Arial, sans-serif;
+background: #eef3ff;
+color: #333;
 }
+
+
+/* Світіння заголовка */
+header h1 {
+text-shadow: 0 0 12px rgba(0, 102, 255, 0.6);
+}
+
 
 /* Шапка */
 header {
-    background: #0066cc;
-    color: white;
-    padding: 20px;
-    text-align: center;
+background: #0066cc;
+color: white;
+padding: 25px;
+text-align: center;
+border-bottom-left-radius: 25px;
+border-bottom-right-radius: 25px;
+animation: fadeIn 0.7s ease;
 }
+
 
 /* Меню */
 nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: #004a99;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+background: #004a99;
+border-radius: 20px;
+margin: 15px;
+padding: 5px;
+box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 nav a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    font-weight: bold;
+color: white;
+text-decoration: none;
+padding: 14px 20px;
+font-weight: bold;
+border-radius: 15px;
+transition: 0.2s;
 }
 nav a:hover {
-    background: #003366;
+background: #003366;
+transform: scale(1.05);
 }
+
 
 /* Контейнер */
 .container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-    background: white;
-    animation: fadeIn 0.7s ease;
+max-width: 1000px;
+margin: auto;
+padding: 20px;
+background: white;
+border-radius: 25px;
+box-shadow: 0 0 20px rgba(0,0,0,0.1);
+animation: fadeIn 0.7s ease;
 }
+
 
 /* Блоки */
 .block {
-    background: #e8f2ff;
-    border-left: 4px solid #0066cc;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 6px;
-    animation: fadeIn 0.7s ease;
+background: #e8f2ff;
+border-left: 4px solid #0066cc;
+padding: 20px;
+margin: 15px 0;
+border-radius: 20px;
+animation: slideUp 0.6s ease;
+box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-/* Адаптивність */
-@media (max-width: 600px) {
-    nav a { padding: 10px; font-size: 14px; }
-}
 
 /* Анімація */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(15px); }
-    to { opacity: 1; transform: translateY(0); }
+from { opacity: 0; transform: translateY(15px); }
+to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideUp {
+from { opacity: 0; transform: translateY(25px); }
+to { opacity: 1; transform: translateY(0); }
 }
 
+
 /* Тести */
+.quiz-question {
+background: #f0f5ff;
+padding: 20px;
+border-radius: 22px;
+margin: 20px 0;
+box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
 .quiz-option {
-    background: #dbe6ff;
-    padding: 10px;
-    border-radius: 6px;
-    margin: 8px 0;
-    cursor: pointer;
+background: #dbe6ff;
+padding: 12px;
+border-radius: 18px;
+margin: 10px 0;
+cursor: pointer;
+transition: 0.2s;
 }
 .quiz-option:hover {
-    background: #c7d8ff;
+background: #c7d8ff;
+transform: scale(1.03);
 }
 .correct { background: #b5f7b5 !important; }
 .wrong { background: #ffb5b5 !important; }
-svg { width: 100%; max-height: 300px; }
+
+
+#resultBox {
+display: none;
+background: #e5ffe5;
+margin-top: 25px;
+padding: 20px;
+border-radius: 20px;
+}
