@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="uk">
 <head>
     <meta charset="UTF-8" />
@@ -8,11 +7,10 @@
     <link rel="stylesheet" href="style.css" />
     <style>
         main { max-width: 1000px; margin: auto; padding: 20px; }
-        section { background: #e8f2ff; padding: 20px; margin: 15px 0; border-radius: 15px; border-left: 6px solid #0066cc; box-shadow: 0 0 15px rgba(0,102,204,0.3); animation: fadeIn 0.7s ease; }
-        section h2 { margin-top: 0; }
-        a { color: #004a99; text-decoration: underline; }
-        a:hover { color: #003366; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+        section { background: #e8f2ff; padding: 20px; margin: 25px 0; border-radius: 15px; border-left: 6px solid #0066cc; box-shadow: 0 4px 15px rgba(0,0,0,0.1); animation: fadeIn 0.7s ease; }
+        .img-fluid { width: 100%; height: auto; border-radius: 12px; margin: 15px 0; object-fit: cover; max-height: 400px; }
+        .war-danger { border-left-color: #ff4d4d; background: #fff1f1; }
+        .video-btn { display: inline-block; background: #0066cc; color: white !important; padding: 12px 25px; text-decoration: none; border-radius: 30px; font-weight: bold; margin-top: 10px; }
     </style>
 </head>
 <body>
@@ -28,52 +26,29 @@
     </header>
 
 <main>
+    <section class="war-danger">
+        <h2>⚠️ Безпека під час військового стану в Україні</h2>
+        <img src="https://images.unsplash.com/photo-1645511309321-7299388e367a?q=80&w=1000&auto=format" alt="Сирена та безпека" class="img-fluid">
+        <p>Сьогодні кожен українець повинен знати правила, які рятують життя в умовах війни. Це стосується не лише обстрілів, а й мінної безпеки та інформаційної гігієни.</p>
+        <ul>
+            <li><strong>Правило «двох стін»:</strong> під час повітряної тривоги знайдіть безпечне місце, якщо немає доступу до укриття.</li>
+            <li><strong>Мінна небезпека:</strong> ніколи не підходьте до підозрілих предметів. Бачите дрон чи залишки ракети — телефонуйте 101.</li>
+            <li><strong>Світломаскування:</strong> у вечірній час вимикайте світло в оселях згідно з рекомендаціями влади.</li>
+            <li><strong>Інформаційна безпека:</strong> не публікуйте фото роботи ППО або місця «прильотів».</li>
+        </ul>
+    </section>
+
     <section>
         <h2>Що таке надзвичайні ситуації?</h2>
-        <p>
-            Надзвичайні ситуації — це події, що загрожують життю та здоров'ю людей або можуть призвести до руйнувань. 
-            Важливо знати алгоритми дій, щоб зберегти себе та оточуючих. Правильні рішення допомагають мінімізувати ризики та запобігти травмам.
-        </p>
-        <p>
-            Сюди входять природні катастрофи, техногенні аварії, пожежі, вибухи, хімічні загрози та інші події, що потребують швидкої реакції.
-        </p>
-    </section>
-
-    <section>
-        <h2>Основні правила поведінки</h2>
-        <ul>
-            <li><strong>Зберігайте спокій</strong> — паніка може погіршити ситуацію.</li>
-            <li><strong>Оцінюйте обстановку</strong> — визначте найбільшу загрозу зараз.</li>
-            <li><strong>Слухайте офіційні джерела</strong> — виконуйте інструкції служб екстреного реагування.</li>
-            <li><strong>Допомагайте іншим</strong> — тільки якщо це безпечно для вас.</li>
-        </ul>
-        <p>
-            В екстрених ситуаціях секунди важливі, тому вміння діяти швидко та правильно є ключовим.
-        </p>
-    </section>
-
-    <section>
-        <h2>Приклади надзвичайних ситуацій</h2>
-        <p>Найпоширеніші з них:</p>
-        <ul>
-            <li><strong>Пожежі:</strong> залишайте приміщення, користуйтеся сходами, не використовуйте ліфт.</li>
-            <li><strong>Повені:</strong> підіймайтеся на вищі поверхи, не заходьте у воду без потреби.</li>
-            <li><strong>Землетруси:</strong> сховайтеся під міцний стіл або біля внутрішньої стіни, тримайтеся подалі від вікон.</li>
-            <li><strong>Хімічні аварії:</strong> закрийте вікна та двері, використовуйте тканину або маску для захисту дихання.</li>
-        </ul>
-        <p>
-            Головне — завжди забезпечити власну безпеку та допомагати іншим тільки якщо це безпечно.
-        </p>
+        <p>Надзвичайні ситуації — це події, що загрожують життю та здоров'ю людей. Це можуть бути природні стихії, техногенні аварії або соціальні конфлікти.</p>
+        <img src="https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?q=80&w=1000&auto=format" alt="Рятувальні служби" class="img-fluid">
     </section>
 
     <section>
         <h2>Навчальне відео</h2>
-        <p>Перегляньте навчальне відео, щоб дізнатися детальніше, як діяти у різних видах надзвичайних ситуацій:</p>
-        <p>
-            <a href="https://youtu.be/6guAinzMzSA?si=_H17kcHh8vAVNLL5" target="_blank">Переглянути відео про НС</a>
-        </p>
+        <p>Дізнайтеся більше про алгоритми дій у детальному відеоуроці:</p>
+        <a href="https://youtu.be/6guAinzMzSA?si=_H17kcHh8vAVNLL5" target="_blank" class="video-btn">▶ Переглянути відео про НС</a>
     </section>
 </main>
-
 </body>
 </html>
