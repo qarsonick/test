@@ -70,6 +70,32 @@ nav a:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
+/* Анімація карток при наведенні */
+.animate-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 102, 204, 0.2);
+}
+
+/* Кнопки */
+.video-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #004a99;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.video-btn:hover {
+    background: #003366;
+}
+
 /* Анімація */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(15px); }
